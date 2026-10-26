@@ -1,0 +1,437 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SG Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sam sailing
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT4H
+X-PUBLISHED-TTL:PT4H
+BEGIN:VEVENT
+UID:rc44-cartagena-26@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261117
+SUMMARY:Sam away: 44Cup Cartagena
+LOCATION:Cartagena
+DESCRIPTION:Sun 8 Nov: Travel out\nMon 9 Nov: Training\nTue 10 Nov: Traini
+ ng\nWed 11 Nov: Racing\nThu 12 Nov: Racing\nFri 13 Nov: Racing\nSat 14 No
+ v: Racing\nSun 15 Nov: Racing\nMon 16 Nov: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-dubai-26@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261124
+SUMMARY:Sam away: SailGP Dubai
+LOCATION:Dubai
+DESCRIPTION:Thu 19 Nov: Travel out\nFri 20 Nov: Training\nSat 21 Nov: Raci
+ ng\nSun 22 Nov: Racing\nMon 23 Nov: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-gf-26@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261201
+SUMMARY:Sam away: SailGP Grand Final
+LOCATION:Abu Dhabi
+DESCRIPTION:Thu 26 Nov: Travel out\nFri 27 Nov: Training\nSat 28 Nov: Raci
+ ng\nSun 29 Nov: Racing\nMon 30 Nov: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-pensacola-26@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261222
+SUMMARY:Sam away: SailGP F50 training
+LOCATION:Pensacola
+DESCRIPTION:Sun 13 Dec: Travel out\nMon 14 Dec: Training\nTue 15 Dec: Trai
+ ning\nWed 16 Dec: Training\nThu 17 Dec: Training\nFri 18 Dec: Training\nS
+ at 19 Dec: Training\nSun 20 Dec: Training\nMon 21 Dec: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c31-marmaris1@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270119
+SUMMARY:Sam away: Cape 31 Marmaris 1
+LOCATION:Marmaris
+DESCRIPTION:Wed 13 Jan: Travel out\nThu 14 Jan: Racing\nFri 15 Jan: Racing
+ \nSat 16 Jan: Racing\nSun 17 Jan: Training\nMon 18 Jan: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-hk@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270125
+SUMMARY:Sam away: SailGP Hong Kong
+LOCATION:Victoria Harbour\, Hong Kong
+DESCRIPTION:Thu 21 Jan: Travel out\nFri 22 Jan: Training\nSat 23 Jan: Raci
+ ng\nSun 24 Jan: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:rc44-antigua1@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270202
+SUMMARY:Sam away: 44Cup Antigua 1
+LOCATION:Falmouth Harbour\, Antigua
+DESCRIPTION:Straight on from the previous event.\nMon 25 Jan: Travel out\n
+ Tue 26 Jan: Training\nWed 27 Jan: Racing\nThu 28 Jan: Racing\nFri 29 Jan:
+  Racing\nSat 30 Jan: Racing\nSun 31 Jan: Racing\nMon 1 Feb: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mr-worlds-27@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270207
+SUMMARY:Sam away: Match racing Match Racing Worlds
+LOCATION:AMAALA\, Saudi Arabia
+DESCRIPTION:Tue 2 Feb: Racing\nWed 3 Feb: Racing\nThu 4 Feb: Racing\nFri 5
+  Feb: Racing\nSat 6 Feb: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-pensacola-27@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270213
+SUMMARY:Sam away: SailGP F50 training
+LOCATION:Pensacola
+DESCRIPTION:Sun 7 Feb: Training\nMon 8 Feb: Training\nTue 9 Feb: Training\
+ nWed 10 Feb: Training\nThu 11 Feb: Training\nFri 12 Feb: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-perth@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270222
+SUMMARY:Sam away: SailGP Perth
+LOCATION:Perth
+DESCRIPTION:Thu 18 Feb: Travel out\nFri 19 Feb: Training\nSat 20 Feb: Raci
+ ng\nSun 21 Feb: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c31-marmaris2@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270302
+SUMMARY:Sam away: Cape 31 Marmaris 2
+LOCATION:Marmaris
+DESCRIPTION:Straight on from the previous event.\nWed 24 Feb: Travel out\n
+ Thu 25 Feb: Training\nFri 26 Feb: Racing\nSat 27 Feb: Racing\nSun 28 Feb:
+  Racing\nMon 1 Mar: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:rc44-antigua2@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270309
+SUMMARY:Sam away: 44Cup Antigua 2
+LOCATION:Nelson's Dockyard\, Antigua
+DESCRIPTION:Mon 1 Mar: Training\nTue 2 Mar: Training\nWed 3 Mar: Racing\nT
+ hu 4 Mar: Racing\nFri 5 Mar: Racing\nSat 6 Mar: Racing\nSun 7 Mar: Racing
+ \nMon 8 Mar: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-sf@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270406
+SUMMARY:Sam away: SailGP San Francisco
+LOCATION:San Francisco
+DESCRIPTION:Thu 1 Apr: Travel out\nFri 2 Apr: Training\nSat 3 Apr: Racing\
+ nSun 4 Apr: Racing\nMon 5 Apr: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:m32-bvi3@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270419
+SUMMARY:Sam away: M32 BVI Winter Series 3
+LOCATION:Nanny Cay\, BVI
+DESCRIPTION:Tue 13 Apr: Travel out\nWed 14 Apr: Training\nThu 15 Apr: Trai
+ ning\nFri 16 Apr: Racing\nSat 17 Apr: Racing\nSun 18 Apr: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c31-scarlino@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270419
+DTEND;VALUE=DATE:20270427
+SUMMARY:Sam away: Cape 31 Scarlino
+LOCATION:Scarlino
+DESCRIPTION:Straight on from the previous event.\nMon 19 Apr: Travel out\n
+ Tue 20 Apr: Training\nWed 21 Apr: Training\nThu 22 Apr: Training\nFri 23 
+ Apr: Racing\nSat 24 Apr: Racing\nSun 25 Apr: Racing\nMon 26 Apr: Travel h
+ ome
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-bermuda@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270504
+SUMMARY:Sam away: SailGP Bermuda
+LOCATION:Bermuda
+DESCRIPTION:Thu 29 Apr: Travel out\nFri 30 Apr: Training\nSat 1 May: Racin
+ g\nSun 2 May: Racing\nMon 3 May: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-halifax@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270517
+SUMMARY:Sam away: SailGP Halifax
+LOCATION:Halifax
+DESCRIPTION:Thu 13 May: Travel out\nFri 14 May: Training\nSat 15 May: Raci
+ ng\nSun 16 May: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c31-calagalera@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270525
+SUMMARY:Sam away: Cape 31 Cala Galera
+LOCATION:Cala Galera
+DESCRIPTION:Straight on from the previous event.\nMon 17 May: Travel out\n
+ Tue 18 May: Training\nWed 19 May: Training\nThu 20 May: Training\nFri 21 
+ May: Racing\nSat 22 May: Racing\nSun 23 May: Racing\nMon 24 May: Travel h
+ ome
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-ny@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270608
+SUMMARY:Sam away: SailGP New York
+LOCATION:New York
+DESCRIPTION:Thu 3 Jun: Travel out\nFri 4 Jun: Training\nSat 5 Jun: Racing\
+ nSun 6 Jun: Racing\nMon 7 Jun: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c31-garda@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270614
+SUMMARY:Sam away: Cape 31 Garda
+LOCATION:Lake Garda
+DESCRIPTION:Mon 7 Jun: Training\nTue 8 Jun: Training\nWed 9 Jun: Training\
+ nThu 10 Jun: Racing\nFri 11 Jun: Racing\nSat 12 Jun: Racing\nSun 13 Jun: 
+ Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:m32-block@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270627
+SUMMARY:Sam away: M32 Block Island Race Week
+LOCATION:Block Island
+DESCRIPTION:Fri 18 Jun: Travel out\nSat 19 Jun: Training\nSun 20 Jun: Trai
+ ning\nMon 21 Jun: Racing\nTue 22 Jun: Racing\nWed 23 Jun: Racing\nThu 24 
+ Jun: Racing\nFri 25 Jun: Racing\nSat 26 Jun: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mr-matchcup-sweden-27@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270628
+DTEND;VALUE=DATE:20270704
+SUMMARY:Sam away: Match racing Match Cup Sweden
+LOCATION:Marstrand
+DESCRIPTION:Mon 28 Jun: Racing\nTue 29 Jun: Racing\nWed 30 Jun: Racing\nTh
+ u 1 Jul: Racing\nFri 2 Jul: Racing\nSat 3 Jul: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-portsmouth@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270722
+DTEND;VALUE=DATE:20270726
+SUMMARY:Sam away: SailGP Portsmouth
+LOCATION:Portsmouth
+DESCRIPTION:Thu 22 Jul: Travel out\nFri 23 Jul: Training\nSat 24 Jul: Raci
+ ng\nSun 25 Jul: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:m32-usnats@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270726
+DTEND;VALUE=DATE:20270803
+SUMMARY:Sam away: M32 US Nationals
+LOCATION:Newport
+DESCRIPTION:Straight on from the previous event.\nTue 27 Jul: Travel out\n
+ Wed 28 Jul: Training\nThu 29 Jul: Training\nFri 30 Jul: Racing\nSat 31 Ju
+ l: Racing\nSun 1 Aug: Racing\nMon 2 Aug: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:rc44-marstrand@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270802
+DTEND;VALUE=DATE:20270809
+SUMMARY:Sam away: 44Cup Marstrand
+LOCATION:Marstrand
+DESCRIPTION:Mon 2 Aug: Training\nTue 3 Aug: Training\nWed 4 Aug: Racing\nT
+ hu 5 Aug: Racing\nFri 6 Aug: Racing\nSat 7 Aug: Racing\nSun 8 Aug: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-sassnitz@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270812
+DTEND;VALUE=DATE:20270816
+SUMMARY:Sam away: SailGP Sassnitz
+LOCATION:Sassnitz
+DESCRIPTION:Thu 12 Aug: Travel out\nFri 13 Aug: Training\nSat 14 Aug: Raci
+ ng\nSun 15 Aug: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:m32-na@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270816
+DTEND;VALUE=DATE:20270824
+SUMMARY:Sam away: M32 North Americans
+LOCATION:Newport
+DESCRIPTION:Straight on from the previous event.\nTue 17 Aug: Travel out\n
+ Wed 18 Aug: Training\nThu 19 Aug: Training\nFri 20 Aug: Racing\nSat 21 Au
+ g: Racing\nSun 22 Aug: Racing\nMon 23 Aug: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-valencia@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270902
+DTEND;VALUE=DATE:20270907
+SUMMARY:Sam away: SailGP Valencia
+LOCATION:Valencia
+DESCRIPTION:Thu 2 Sept: Travel out\nFri 3 Sept: Training\nSat 4 Sept: Raci
+ ng\nSun 5 Sept: Racing\nMon 6 Sept: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-rome@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270909
+DTEND;VALUE=DATE:20270913
+SUMMARY:Sam away: SailGP Rome
+LOCATION:Rome
+DESCRIPTION:Thu 9 Sept: Travel out\nFri 10 Sept: Training\nSat 11 Sept: Ra
+ cing\nSun 12 Sept: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c31-sep@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270913
+DTEND;VALUE=DATE:20270921
+SUMMARY:Sam away: Cape 31 September event
+LOCATION:
+DESCRIPTION:Straight on from the previous event.\nMon 13 Sept: Travel out\
+ nTue 14 Sept: Training\nWed 15 Sept: Training\nThu 16 Sept: Training\nFri
+  17 Sept: Racing\nSat 18 Sept: Racing\nSun 19 Sept: Racing\nMon 20 Sept: 
+ Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:rc44-worlds@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270920
+DTEND;VALUE=DATE:20270927
+SUMMARY:Sam away: 44Cup World Championship
+LOCATION:Porto Cervo
+DESCRIPTION:Mon 20 Sept: Training\nTue 21 Sept: Racing\nWed 22 Sept: Racin
+ g\nThu 23 Sept: Racing\nFri 24 Sept: Racing\nSat 25 Sept: Racing\nSun 26 
+ Sept: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c31-stropez@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20270927
+DTEND;VALUE=DATE:20271004
+SUMMARY:Sam away: Cape 31 Porto Cervo
+LOCATION:Porto Cervo
+DESCRIPTION:Straight on from the previous event.\nTue 28 Sept: Training\nW
+ ed 29 Sept: Training\nThu 30 Sept: Racing\nFri 1 Oct: Racing\nSat 2 Oct: 
+ Racing\nSun 3 Oct: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-rio@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20271007
+DTEND;VALUE=DATE:20271012
+SUMMARY:Sam away: SailGP Rio de Janeiro
+LOCATION:Rio de Janeiro
+DESCRIPTION:Thu 7 Oct: Travel out\nFri 8 Oct: Training\nSat 9 Oct: Racing\
+ nSun 10 Oct: Racing\nMon 11 Oct: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:rc44-lapalma@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20271031
+DTEND;VALUE=DATE:20271108
+SUMMARY:Sam away: 44Cup La Palma
+LOCATION:La Palma\, Canary Islands
+DESCRIPTION:Sun 31 Oct: Travel out\nMon 1 Nov: Training\nTue 2 Nov: Traini
+ ng\nWed 3 Nov: Racing\nThu 4 Nov: Racing\nFri 5 Nov: Racing\nSat 6 Nov: R
+ acing\nSun 7 Nov: Racing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:m32-worlds@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20271108
+DTEND;VALUE=DATE:20271115
+SUMMARY:Sam away: M32 World Championship
+LOCATION:Miami
+DESCRIPTION:Mon 8 Nov: Racing\nTue 9 Nov: Racing\nWed 10 Nov: Racing\nThu 
+ 11 Nov: Racing\nFri 12 Nov: Racing\nSat 13 Nov: Racing\nSun 14 Nov: Trave
+ l home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sgp-dubai-27@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20271118
+DTEND;VALUE=DATE:20271123
+SUMMARY:Sam away: SailGP Dubai
+LOCATION:Dubai
+DESCRIPTION:Thu 18 Nov: Travel out\nFri 19 Nov: Training\nSat 20 Nov: Raci
+ ng\nSun 21 Nov: Racing\nMon 22 Nov: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mr-wmrt-final-27@sg-calendar
+DTSTAMP:20261026T142131Z
+DTSTART;VALUE=DATE:20271205
+DTEND;VALUE=DATE:20271213
+SUMMARY:Sam away: Match racing WMRT Final
+LOCATION:
+DESCRIPTION:Sun 5 Dec: Travel out\nMon 6 Dec: Racing\nTue 7 Dec: Racing\nW
+ ed 8 Dec: Racing\nThu 9 Dec: Racing\nFri 10 Dec: Racing\nSat 11 Dec: Raci
+ ng\nSun 12 Dec: Travel home
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
