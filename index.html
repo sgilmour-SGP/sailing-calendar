@@ -99,7 +99,7 @@ const ICS=location.href.replace(/[^/]*$/,'')+'sam.ics';
 function trips(){
   const ts=D.trips.filter(t=>toN(t.to)>=TODAY);
   if(!ts.length) return '<div class="empty">No trips planned.</div>';
-  let h=`<div class="cal"><a class="btn" href="${ICS.replace(/^https?:/,'webcal:')}">Add to iPhone calendar</a><span>Subscribes your iPhone to Sam's trips. It updates by itself when plans change.</span></div>`;
+  let h='';
   let lm='', prev=null;
   for(const t of ts){
     const f=toN(t.from), to=toN(t.to);
@@ -150,17 +150,27 @@ function worldV(){
   if(body) h+=`<div class="list">${body}</div>`;
   return h;
 }
+function calV(){
+  const wc=ICS.replace(/^https?:/,'webcal:');
+  return `<section class="cal"><a class="btn" href="${wc}">Add to iPhone calendar</a><span>Subscribes your iPhone to Sam's trips. They show as all-day "Sam away" blocks and update by themselves when plans change.</span></section>
+  <section class="list" style="padding:14px"><b>If the button doesn't work</b>
+   <ol style="margin:8px 0 0;padding-left:20px;line-height:1.6"><li>Open Settings → Apps → Calendar → Calendar Accounts</li><li>Add Account → Other → Add Subscribed Calendar</li><li>Paste this link and tap Next, then Save:</li></ol>
+   <input id="icsl" readonly value="${esc(wc)}" style="width:100%;margin-top:8px;padding:8px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);font:inherit;font-size:13px">
+   <button class="copy" data-copy="1" style="margin-top:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:7px;padding:6px 12px">Copy link</button>
+   <p style="color:var(--muted);font-size:13px;margin:10px 0 0">On a Mac: Calendar → File → New Calendar Subscription, then paste the link. Google Calendar or Outlook: add a calendar from URL using the same link starting with https:// instead of webcal://.</p></section>`;
+}
 function render(){
-  $('nav').innerHTML=[['trips','Trips'],['planner','Planner'],['world','World']].map(([k,l])=>`<button data-tab="${k}" ${tab===k?'aria-current="page"':''}>${l}</button>`).join('');
+  $('nav').innerHTML=[['trips','Trips'],['planner','Planner'],['world','World'],['cal','Add to calendar']].map(([k,l])=>`<button data-tab="${k}" ${tab===k?'aria-current="page"':''}>${l}</button>`).join('');
   if(!D) return;
   const cur=D.trips.find(t=>toN(t.from)<=TODAY&&toN(t.to)>=TODAY);
   if(cur){ let l=cur; while(l.next){ const n=D.trips.find(t=>t.id===l.next); if(!n) break; l=n; } $('now').innerHTML=`Sam is away at <b>${esc(cur.label)} ${esc(cur.name)}</b> · home <b>${dL(toN(l.to)+1)}</b>`; }
   else { const nx=D.trips.find(t=>toN(t.from)>TODAY); $('now').innerHTML=nx?`Sam is home · next trip <b>${dL(toN(nx.from))}</b>, ${esc(nx.label)} ${esc(nx.name)}`:'Sam is home'; }
-  $('view').innerHTML=tab==='trips'?trips():tab==='planner'?planner():worldV();
+  $('view').innerHTML=tab==='trips'?trips():tab==='planner'?planner():tab==='cal'?calV():worldV();
 }
 function flash(id){ const el=$(id); if(!el) return; el.scrollIntoView({block:'center'}); el.classList.add('flash'); setTimeout(()=>el.classList.remove('flash'),1600); }
 document.addEventListener('click',e=>{ const g=e.target.closest('[data-go]'); if(g){ tab='trips'; render(); flash('t-'+g.dataset.go); return; }
   const b=e.target.closest('button'); if(!b) return;
+  if(b.dataset.copy){ const i=$('icsl'); const done=()=>{b.textContent='Copied';}; if(navigator.clipboard) navigator.clipboard.writeText(i.value).then(done,()=>{i.select();}); else i.select(); return; }
   if(b.dataset.tab){ tab=b.dataset.tab; render(); scrollTo(0,0); } if(b.dataset.wf){ wf=b.dataset.wf; render(); } });
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{ D=d; $('sub').textContent='Updated '+new Date(d.updated).toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'}); render(); })
  .catch(()=>{ $('sub').textContent=''; $('view').innerHTML='<div class="empty">The calendar has not been published yet.</div>'; });
