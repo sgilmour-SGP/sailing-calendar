@@ -63,6 +63,10 @@ td.race{color:var(--on-c)}td.tdy{box-shadow:inset 0 0 0 2px var(--ink)}
 .li.w i{background:transparent;box-shadow:inset 0 0 0 2px var(--line)}
 .li div{min-width:0}.li small{display:block;color:var(--muted);font-size:13px}
 .empty{color:var(--muted);text-align:center;padding:30px}
+td[data-go]{cursor:pointer}
+td[data-go]:hover{outline:2px solid var(--ink);outline-offset:-2px}
+.flash{animation:flash 1.6s ease-out}
+@keyframes flash{0%,40%{box-shadow:0 0 0 3px var(--ink)}100%{box-shadow:0 0 0 0 transparent}}
 @media (max-width:600px){th,td{width:100px;max-width:100px}}
 </style>
 </head>
@@ -102,7 +106,7 @@ function trips(){
     if(prev && !t.after){ const g=f-toN(prev.to)-1; if(g>0) h+=`<div class="home">Sam home ${g} day${g>1?'s':''} · ${range(toN(prev.to)+1,f-1)}</div>`; }
     const m=dt(f,{month:'long',year:'numeric'}); if(m!==lm){ h+=`<div class="mh">${m}</div>`; lm=m; }
     const strip=t.days.map(([d,ty])=>`<i class="${ty==='race'?'race':ty==='train'?'train':'trav'}" title="${dL(toN(d))} · ${TL[ty]}"></i>`).join('');
-    h+=`<article class="trip" style="--c:${cv(t.cls)}"><div class="k">${esc(t.label)}</div><h3>${esc(t.name)}</h3><div class="m">${esc(t.venue||'Venue TBC')} · ${t.camp?'Training':'Racing'} ${range(toN(t.race[0]),toN(t.race[1]))}</div>
+    h+=`<article class="trip" id="t-${esc(t.id)}" style="--c:${cv(t.cls)}"><div class="k">${esc(t.label)}</div><h3>${esc(t.name)}</h3><div class="m">${esc(t.venue||'Venue TBC')} · ${t.camp?'Training':'Racing'} ${range(toN(t.race[0]),toN(t.race[1]))}</div>
       <div class="away">${t.after?'Straight on from the previous event':'Leaves <b>'+dL(f)+'</b>'} · ${t.next?'then straight on to the next':'home <b>'+dL(to)+'</b>'}</div><div class="strip">${strip}</div></article>`;
     prev=t;
   }
@@ -126,7 +130,8 @@ function planner(){
       if(e&&e.t){ cls={race:'race',train:'train',out:'trav',back:'trav',away:'awy'}[e.ty]; st=`style="--c:${cv(e.t.cls)}"`;
         const p=map.get(toS(n-1)); if((e.ty==='race'||e.ty==='train')&&(d===1||!p||p.t!==e.t||!(p.ty==='race'||p.ty==='train'))) nm=(SHORT[e.t.cls]?SHORT[e.t.cls]+' ':'')+e.t.name; }
       if(n===TODAY) cls+=' tdy';
-      t+=`<td class="${cls}" ${st}><b class="dn">${d}</b><span class="wd">${'SMTWTFS'[wd]}</span>${nm?`<span class="nm">${esc(nm)}</span>`:''}</td>`; }); t+='</tr>'; }
+      const go=e&&e.t?` data-go="${esc(e.t.id)}" title="${esc(e.t.label+' '+e.t.name)}"`:'';
+      t+=`<td class="${cls}" ${st}${go}><b class="dn">${d}</b><span class="wd">${'SMTWTFS'[wd]}</span>${nm?`<span class="nm">${esc(nm)}</span>`:''}</td>`; }); t+='</tr>'; }
     h+=`<div class="yr">${y}</div><div class="planner"><table>${t}</tbody></table></div>`;
   }
   return h;
@@ -153,7 +158,9 @@ function render(){
   else { const nx=D.trips.find(t=>toN(t.from)>TODAY); $('now').innerHTML=nx?`Sam is home · next trip <b>${dL(toN(nx.from))}</b>, ${esc(nx.label)} ${esc(nx.name)}`:'Sam is home'; }
   $('view').innerHTML=tab==='trips'?trips():tab==='planner'?planner():worldV();
 }
-document.addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return;
+function flash(id){ const el=$(id); if(!el) return; el.scrollIntoView({block:'center'}); el.classList.add('flash'); setTimeout(()=>el.classList.remove('flash'),1600); }
+document.addEventListener('click',e=>{ const g=e.target.closest('[data-go]'); if(g){ tab='trips'; render(); flash('t-'+g.dataset.go); return; }
+  const b=e.target.closest('button'); if(!b) return;
   if(b.dataset.tab){ tab=b.dataset.tab; render(); scrollTo(0,0); } if(b.dataset.wf){ wf=b.dataset.wf; render(); } });
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{ D=d; $('sub').textContent='Updated '+new Date(d.updated).toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'}); render(); })
  .catch(()=>{ $('sub').textContent=''; $('view').innerHTML='<div class="empty">The calendar has not been published yet.</div>'; });
